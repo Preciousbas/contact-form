@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+		<header>
+    <div class="container">
+      <input type="checkbox" name="" id="check">
+      <div class="logo-container">
+        <img src="#">
+      </div>
+      <div class="nav-links">
+        <ul>
+          <li class="nav-link" style="--i: .6s">
+            <a href='index.html'>Home</a>
+          </li>
+          <li class="nav-link" style="--i: .85s"> 
+            <a href='#'>About Us <i class="fa fa-caret-down"></i></a><input type="checkbox" id="btn-1">
+            <div class="dropdown">
+              <ul>
+                  <li class="dropdown-link"><a href="vision.html">Chesterfield At A Glance</a></li>
+                    <li class="dropdown-link"><a href="Founder's Note.html">Founder's Note</a></li>
+                    <li class="dropdown-link"><a href="codes.html">Codes &amp; Policies</a></li>
+                    <li class="dropdown-link"><a href="news.html">News</a></li>
+                    <li class="dropdown-link"><a href="calendar.html">Calendar</a></li>
+                    <li class="dropdown-link"><a href="#">Gallery</a></li>
+                  </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: 1.1s">
+            <a href='#'>Schools <i class="fa fa-caret-down"></i></a><input type="checkbox" id="btn-2">
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link"><a href="nursery.html">Nursery School</a></li>
+                    <li class="dropdown-link"><a href="nursery.html #primary">Primary School</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: 1.35s;">
+            <a href='#'>Admissions <i class="fa fa-caret-down"></i></a><input type="checkbox" id="btn-3">
+            <div class="dropdown">
+              <ul>
+                <li class="dropdown-link"><a href="application.html">Application Process</a></li>
+                    <li class="dropdown-link"><a href="tuition.html">Tuition</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-link" style="--i: 1.6s">
+            <a href='contact.html' class="active">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="section">
+    <img src="Black team.jpg">
+    <div class="overlay"></div>
+    <h2 class="fadeIn">CONTACT</h2>
+  </div>
+  <div class="container-contact">
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">We would be glad to have you join our amazing family</h3>
+
+        <p>Please use the form on this page. Alternatively you can reach us via:<br><br>
+          Phone: +23409050585494.<br><br>
+          Email: chesterfieldphuy@gmail.com<br><br>
+          Address: No. 17 King of Kings Street, Off Aka Etinan, Uyo, Akwa Ibom, Nigeria.<br><br>
+          <b>Opening Hours</b>:  8am – 5pm (Monday to Friday)</p>
+      </div>
+      <div class="contact-form">
+        <span class="circle one"></span>
+        <span class="circle two"></span>
+
+        <form action="contactform.php" method="post">
+          <h3 class="title">Contact Us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" required>
+            <label for="">First Name</label>
+            <span>First Name</span>
+          </div>
+            <div class="input-container">
+            <input type="text" name="name" class="input" required>
+            <label for="">Last Name</label>
+            <span>Last Name</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="phone" class="input" required>
+            <label for="">Phone number</label>
+            <span>Phone Number</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="email" id="email" class="input" required>
+            <label for="">Email</label>
+            <span>Email</span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" id="" required></textarea>     
+            <label for="">Message</label>
+            <span>Message</span>
+          </div>
+          <input type="submit" value="Send" class="btn">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <section class="footers">
+  <div class="footer">
+    <div class="contact">
+      <h3>Contact</h3>
+      <ul>
+        <li>09048898818</li>
+        <li>chesterfieldphuy@gmail.com</li>
+        <li>17 King Of Kings Street, Off Aka Etinan Road, Uyo, Akwa Ibom State</li>
+      </ul>
+    </div>
+    <div class="admit">
+      <h3>Admissions</h3>
+      Enquiries can be made from Monday to Friday between the hours of 8am to 5pm. Excluding public holidays
+    </div>
+    <div class="about">
+      <h3>About Us</h3>
+      <ul>
+        <li><a href="#">Facilities</a></li>
+        <li><a href="#">Vision &amp; Mission</a></li>
+        <li><a href="#">Core Values</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+      </div>
+  </div>
+    <hr class="solid">
+    <p> © 2022| CHESTERFIELD SCHOOLS LIMITED. ALL RIGHTS RESERVED.</p>
+  </section>
+  <script type="text/javascript">
+    const inputs = document.querySelectorAll('.input');
+
+    function focusFunc(){
+      let parent = this.parentNode;
+      parent.classList.add('focus');
+    }
+
+    function blurFunc(){
+      let parent = this.parentNode;
+      if(this.value == ""){
+         parent.classList.remove('focus');
+      }
+    }
+
+    inputs.forEach((input) =>{
+      input.addEventListener('focus', focusFunc);
+      input.addEventListener('blur', blurFunc);
+    });
+  </script>
+  <!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+    function sendEmail(){
+      Email.send({
+        Host:"smtp.gmail.com",
+        Username: "preciousasuquo6@gmail.com",
+        Password: 'password',
+        To: "preciousasuquo6@gmail.com",
+        From: document.getElementById("email").value,
+        Subject: "Contact Enquiries",
+        Body: 'This is the body'
+      }).then(
+      message => alert(message)
+      );
+    }
+  </script>-->
+</body>
+</html>
